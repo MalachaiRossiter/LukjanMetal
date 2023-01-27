@@ -1,4 +1,4 @@
-const Product = require("../models/Product.model");
+const Product = require('./models/product.model');
 
 //creates new Product in database
 module.exports.createProduct = (req, res) => {

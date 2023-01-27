@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 //this will create a database called product if one doesnt already exist without using the shell
 mongoose.connect("mongodb://127.0.0.1:27017/lukjanProducts", {
