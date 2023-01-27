@@ -6,4 +6,4 @@ mongoose.connect("mongodb://127.0.0.1:27017/lukjanProducts", {
     useUnifiedTopology: true,
 })
 .then(() => console.log("Established a connection to the database"))
-.catch(err => console.log("Something went wrong while connecting to the database", err)); 
+.catch(err => console.log("Something went wrong while connecting to the database", err));
