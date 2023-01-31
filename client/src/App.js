@@ -1,14 +1,14 @@
-import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Test from './components/Test';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <NavBar/>
         <Routes>
-          <Route element={<Test/>} path={"/"}/>
+
         </Routes>
       </BrowserRouter>
     </div>
