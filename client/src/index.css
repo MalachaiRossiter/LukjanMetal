@@ -8,7 +8,7 @@
 *--------------------------------------------------------*
 1. setting defaults
 2. navbar
-
+3. Home
 */
 
 /*------ 1. Setting Defaults ------*/
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 h2 {
@@ -43,10 +43,12 @@ code {
     monospace;
 }
 
-/*------ 2. Setting NavBar ------*/
+
+/*------ 2. NavBar ------*/
+
 
 .navbar {
-  padding: 1% 5%;
+  padding: 1% 15%;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -54,6 +56,34 @@ code {
 }
 
 .navlinks {
-  font-size: 16px;
-  padding-left: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+
+/*------ 3. Home ------*/
+
+
+.heroSection {
+  height: 40vh;
+  margin: 5% 15%;
+  padding-left: 2.5%;
+  background-image: url("../public/assets/images/MetalFactory.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroSection h1 {
+  color: #fff;
+}
+
+.btnMajor {
+  height: 40px;
+  width: 120px;
+  background-color: #fff;
+  border-radius: 5px;
 }
