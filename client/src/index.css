@@ -40,7 +40,7 @@ p,a,Link {
 
 
 .navbar {
-  padding: 1% 10%;
+  padding: 1% 7.5%;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -79,8 +79,8 @@ p,a,Link {
 
 .heroSection {
   height: 40vh;
-  margin: 5% 10%;
-  padding-left: 2.5%;
+  margin: 5%;
+  padding-left: 1%;
   background-image: url("../public/assets/images/MetalFactory.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -107,4 +107,47 @@ p,a,Link {
   width: 120px;
   background-color: #fff;
   border-radius: 5px;
+}
+
+.productSection {
+  margin: 5% 5%;
+}
+
+.productSection h2 {
+  padding-left: 2.25%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  padding: 0% 2.5%;
+  flex: 50%;
+}
+
+.cardImage {
+  border: solid 0.5px #8a8a8a;
+}
+
+.containerLink {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  color: #fff;
+  background-color: #302672;
+  border-radius: 2.5px;
+}
+
+.storySection{
+  margin: 0% 15%;
+}
+
+.storySection h2{
+  margin-left: 2.5%;
+  color: #111;
+}
+
+.storySection h3{
+  color: #111;
 }
