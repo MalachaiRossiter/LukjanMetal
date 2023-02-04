@@ -8,6 +8,11 @@ const NavBar = (props) => {
                 <Link to={"/"} class={"navlinks"}>Products</Link>
                 <Link to={"/"} class={"navlinks"}>About</Link>
                 <Link to={"/"} class={"navlinks"}>Contact</Link>
+                <Link to={"/"} class={"navlinks"}>Careers</Link>
+                <form class={"navForm"} onSubmit={"onSubmitHandler"}>
+                    <input class={"navSearch"} type={"text"} value={"search a product"}/>
+                    <input class={"navBtn"} type={"submit"} value={"Search"}/>
+                </form>
             </nav>
         </div>
     )
