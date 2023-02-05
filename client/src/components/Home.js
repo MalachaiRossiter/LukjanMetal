@@ -76,17 +76,28 @@ const Home = (props) => {
         : null}
 
         <div class={"storySection"}>
-            <h2>We make an impact</h2>
+            <h1>We make an impact</h1>
             <div class={"row"}>
-                <div class={"column storyCard i1"}>
+                <Link to={""}><div class={"column storyCard img1"}>
                     <h3>Learn How We Began</h3>
-                    <p>our story of a family owned company</p>
+                    <p>A story of a family owned company</p>
                 </div>
-                <div class={"column storyCard i1"}>
+                </Link>
+                <div class={"column storyCard img2"}>
                     <h3>Learn How We Began</h3>
                     <p>our story of a family owned company</p>
                 </div>
             </div>
+        </div>
+
+        <div class={"careerSection"}>
+            <h2>Your high quality career is waiting</h2>
+            <Link to={""}>
+            <div class={"careerContainer"}>
+                <h3>Learn about our careers</h3>
+                <button class={"btnMajor"}>Learn More &gt;</button>
+            </div>
+            </Link>
         </div>
         </div>
     )

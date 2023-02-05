@@ -140,6 +140,9 @@ p,a,Link {
 }
 
 .storySection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0% 15%;
 }
 
@@ -148,6 +151,53 @@ p,a,Link {
   color: #111;
 }
 
-.storySection h3{
-  color: #111;
+.storyCard {
+  width: 80vh;
+  height: 50vh;
+  padding: 2.5%;
+  margin: 0 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid .5px #8a8a8a;
+}
+
+.img1 {
+  color: #fff;
+  background-image: url("../public/assets/images/Garage.png");
+}
+
+.img2 {
+  color: #fff;
+  background-image: url("../public/assets/images/Community.png");
+}
+
+.careerSection {
+  margin: 5% 11%;
+}
+
+.careerContainer {
+  height: 40vh;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../public/assets/images/careers.png");
+  background-position: center;
+  border: solid .5px #8a8a8a;
+}
+
+/* Footer */
+
+.footer {
+  height: 20vh;
+  padding: 5vh 0vw;
+  background-color: #302672;
+  color: #fff;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: end;
+  text-align: end;
 }
