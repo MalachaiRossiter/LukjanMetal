@@ -24,6 +24,13 @@ module.exports.getProduct = (req,res) => {
     .catch(err => res.status(400).json(err));
 }
 
+//finds by keyword
+module.exports.getProductKeyword = (req,res) => {
+    Product.find({type: req.params.keyword})
+    .then(product => res.json(product))
+    .catch(err => res.status(400).json(err));
+}
+
 //updates a Product in databse by id
 module.exports.updateProduct = (req, res) => {
     Product.findOneAndUpdate({_id: req.params.id}, req.body, {new:true, runValidators: true})

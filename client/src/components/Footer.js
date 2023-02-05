@@ -5,7 +5,7 @@ const Footer = (props) => {
         <div class={"row footer"}>
             <div class={"column footerLeft"}>
                 <ul>
-                    <li><Link to={""}>Home</Link></li>
+                    <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={""}>Careers</Link></li>
                     <li><Link to={""}>Contact</Link></li>
                 </ul>

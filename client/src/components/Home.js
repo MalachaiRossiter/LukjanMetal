@@ -30,11 +30,11 @@ const Home = (props) => {
                     <div class={"row"}>
                     <div class={"column"}>
                         <div class={"card"}>
-                            <img class={"cardImage"} src={`/assets/databaseImages/${productList[1].imagePath}`} alt="Avatar"/>
-                            <div class={"container"}>
+                            <img class={"cardImage"} src={`/assets/databaseImages/${productList[1].imagePath}`} alt="Product item"/>
+                            <div class={"productContainer"}>
                                 <h4><b>{productList[1].name}</b></h4>
                                 <p>{productList[1].description}</p>
-                                <Link to={`/product/display/${productList[2].id}`} class={"containerLink"}>View Product</Link>
+                                <Link to={`/product/${productList[2]._id}`} class={"containerLink"}>View Product</Link>
                             </div>
                         </div>
                     </div>
@@ -42,10 +42,10 @@ const Home = (props) => {
                     <div class={"column"}>
                         <div class={"card"}>
                             <img class={"cardImage"} src={`/assets/databaseImages/${productList[2].imagePath}`} alt="Avatar"/>
-                            <div class={"container"}>
+                            <div class={"productContainer"}>
                                 <h4><b>{productList[2].name}</b></h4>
                                 <p>{productList[2].description}</p>
-                                <Link to={`/product/display/${productList[2].id}`} class={"containerLink"}>View Product</Link>
+                                <Link to={`/product/${productList[2]._id}`} class={"containerLink"}>View Product</Link>
                             </div>
                         </div>
                     </div>
@@ -53,10 +53,10 @@ const Home = (props) => {
                     <div class={"column"}>
                         <div class={"card"}>
                             <img class={"cardImage"} src={`/assets/databaseImages/${productList[3].imagePath}`} alt="Avatar"/>
-                            <div class={"container"}>
+                            <div class={"productContainer"}>
                                 <h4><b>{productList[3].name}</b></h4>
                                 <p>{productList[3].description}</p>
-                                <Link to={`/product/display/${productList[3].id}`} class={"containerLink"}>View Product</Link>
+                                <Link to={`/product/${productList[3]._id}`} class={"containerLink"}>View Product</Link>
                             </div>
                         </div>
                     </div>
@@ -64,10 +64,10 @@ const Home = (props) => {
                     <div class={"column"}>
                         <div class={"card"}>
                             <img class={"cardImage"} src={`/assets/databaseImages/${productList[0].imagePath}`} alt="Avatar"/>
-                            <div class={"container"}>
+                            <div class={"productContainer"}>
                                 <h4><b>{productList[0].name}</b></h4>
                                 <p>{productList[0].description}</p>
-                                <Link to={`/product/display/${productList[0].id}`} class={"containerLink"}>View Product</Link>
+                                <Link to={`/product/${productList[0]._id}`} class={"containerLink"}>View Product</Link>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Home = (props) => {
         <div class={"storySection"}>
             <h1>We make an impact</h1>
             <div class={"row"}>
-                <Link to={""}><div class={"column storyCard img1"}>
+                <Link to={"/about"}><div class={"column storyCard img1"}>
                     <h3>Learn How We Began</h3>
                     <p>A story of a family owned company</p>
                 </div>

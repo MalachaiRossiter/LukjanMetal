@@ -8,7 +8,10 @@
 *--------------------------------------------------------*
 1. setting defaults
 2. navbar
-3. Home
+3. Footer
+4. Home
+5. About
+6. Display All
 */
 
 /*------ 1. Setting Defaults ------*/
@@ -74,7 +77,24 @@ p,a,Link {
 }
 
 
-/*------ 3. Home ------*/
+/*------ 3. Footer ------*/
+
+
+.footer {
+  height: 20vh;
+  padding: 5vh 0vw;
+  background-color: #302672;
+  color: #fff;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+
+
+/*------ 4. Home ------*/
 
 
 .heroSection {
@@ -128,6 +148,10 @@ p,a,Link {
 
 .cardImage {
   border: solid 0.5px #8a8a8a;
+}
+
+.productContainer {
+  margin-top: 5px;
 }
 
 .containerLink {
@@ -187,17 +211,44 @@ p,a,Link {
   border: solid .5px #8a8a8a;
 }
 
-/* Footer */
+/* ------ 5. About & Item Description ------ */
 
-.footer {
-  height: 20vh;
-  padding: 5vh 0vw;
-  background-color: #302672;
-  color: #fff;
+.column2-3 {
+  width: 66.5%;
+  margin-right: 1%;
 }
 
-.footerLeft {
+.column1-3 {
+  width: 33.5%;
+  margin-left: 1%;
+}
+
+.container{
+  margin: 5vh 7.5%;
+}
+
+
+/* ------ 6. Display All ------ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  height: 100%;
+  margin: 10px;
+}
+
+.sidebar {
+  height: 100vh;
+  padding: 2.5%;
   display: flex;
-  justify-content: end;
-  text-align: end;
+  flex-direction: column;
+  border-right: solid 0.5px #686868;
+}
+
+.sidebarList {
+  padding: 1vh;
+  border-bottom: solid 0.5px #686868;
 }
